@@ -4,7 +4,7 @@ $(".owl-carousel").owlCarousel({
   margin: 25,
   nav: true,
   autoplay: true,
-  autoplayTimeout: 1000,
+  autoplayTimeout: 3000,
   autoplayHoverPause: true,
   responsive: {
     0: {
@@ -49,7 +49,6 @@ setTimeout(function(){
     disable: "mobile",
   });
   // Scroll To Top Button
-function ScrollToTop() {
   let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
     let pos = document.documentElement.scrollTop;
@@ -66,11 +65,8 @@ function ScrollToTop() {
       document.documentElement.scrollTop = 0;
     });
     scrollProgress.style.background = `conic-gradient(#675ffa ${scrollValue}%, #D7D7D7A8 ${scrollValue}%)`;
-    // scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
   };
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
-}
 
-ScrollToTop();
 
