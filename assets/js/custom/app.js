@@ -2,7 +2,7 @@
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 25,
-  nav: true,
+  nav: false,
   autoplay: true,
   autoplayTimeout: 3000,
   autoplayHoverPause: true,
@@ -68,5 +68,6 @@ setTimeout(function(){
   };
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
+
 
 
