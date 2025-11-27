@@ -40,7 +40,7 @@ preLoad()
 setTimeout(function(){
   $('#pre-loader').fadeOut();
   $('#pre-loader').delay(150).fadeOut('slow');
-}, 15000);
+}, 3000);
 // AOS
   AOS.init({
     duration: 1000,
@@ -71,4 +71,5 @@ function ScrollToTop() {
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
 }
+
 ScrollToTop();
