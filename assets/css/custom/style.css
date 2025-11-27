@@ -286,7 +286,7 @@ footer p {
 #pre-loader {
   background: #000 url(../../gif/preloader/loader.gif) no-repeat center center;
   background-size: 600px;
-  z-index: 1000 !important;
+  z-index: 10000 !important;
 }
 .scroll-watcher {
   background: linear-gradient(to right, var(--primary), var(--secondary));
@@ -507,3 +507,4 @@ footer p {
   }
 }
 }
+
