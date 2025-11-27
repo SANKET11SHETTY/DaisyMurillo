@@ -36,7 +36,7 @@ function preLoad(){
     loader.style.display = "none";
   });
 };
-preLoad()
+// preLoad()
 setTimeout(function(){
   $('#pre-loader').fadeOut();
   $('#pre-loader').delay(150).fadeOut('slow');
@@ -73,3 +73,4 @@ function ScrollToTop() {
 }
 
 ScrollToTop();
+
