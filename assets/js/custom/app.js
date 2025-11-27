@@ -68,6 +68,10 @@ setTimeout(function(){
   };
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
-
-
-
+// Typed Js
+  var typed = new Typed('#element', {
+    strings: ['Murillo'],
+    typeSpeed: 150,
+    backSpeed: 130,
+    loop: true,
+  });
