@@ -309,7 +309,7 @@ footer p {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  z-index: 10000;
+  z-index: 100;
   transition: all 0.55s linear;
   i {
     color: var(--secondary);
@@ -507,4 +507,5 @@ footer p {
   }
 }
 }
+
 
