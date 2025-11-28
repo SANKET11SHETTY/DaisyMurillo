@@ -335,44 +335,74 @@
                     </a>
                 </div>
             </div>
-            <form class="row mt-5">
+            <form class="row mt-5 needs-validation" novalidate>
                 <div class="col-12">
                     <div class="row gy-5">
                         <div class="col-lg-5 pe-lg-0" data-aos="fade-up">
                             <div class="form-floating mb-lg-3">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="First Name"
-                                    value="Buenos">
+                                    value="Buenos" required>
                                 <label for="floatingInput">First Name</label>
+                                 <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-tooltip">
+                                    Please enter your First Name.
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-2 px-0 d-none d-lg-block"></div>
                         <div class="col-lg-5 ps-lg-0" data-aos="fade-up">
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="Last Name"
-                                    value="Almiron">
+                                    value="Almiron" required>
                                 <label for="floatingInput">Last Name</label>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-tooltip">
+                                    Please enter your Last Name.
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-5 pe-lg-0" data-aos="fade-up">
                             <div class="form-floating">
                                 <input type="email" class="form-control" id="floatingMail" placeholder="Password"
-                                    value="buenosalmiron@hotmail.com">
+                                    value="buenosalmiron@hotmail.com" required>
                                 <label for="floatingMail">Mail</label>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-tooltip">
+                                    Please enter your Mail.
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-2 px-0 d-none d-lg-block"></div>
                         <div class="col-lg-5 ps-lg-0" data-aos="fade-up">
                             <div class="form-floating">
                                 <input type="tel" class="form-control" id="floatingPhone" placeholder="Phone"
-                                    value="+44 827 7736">
+                                    value="+44 827 7736" required>
                                 <label for="floatingPhone">Phone</label>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-tooltip">
+                                    Please enter your Phone.
+                                </div>
                             </div>
                         </div>
                         <div class="col-12" data-aos="fade-up">
                             <div class="form-floating">
                                 <textarea class="form-control" placeholder="Leave a comment here"
-                                    id="floatingTextarea"></textarea>
+                                    id="floatingTextarea" required></textarea>
                                 <label for="floatingTextarea">Message</label>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-tooltip">
+                                    Please enter your Message.
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 pt-lg-4" data-aos="fade-up">
@@ -400,4 +430,5 @@
 
 
 </html>
+
 
