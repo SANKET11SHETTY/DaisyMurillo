@@ -45,7 +45,7 @@ setTimeout(function(){
   AOS.init({
     duration: 1000,
     easing: 'linear', 
-    once: true,
+    once: false,
     disable: "mobile",
   });
   // Scroll To Top Button
@@ -75,3 +75,20 @@ setTimeout(function(){
     backSpeed: 130,
     loop: true,
   });
+ // Counter
+$(window).on("scroll counter", function () {
+  const box = $(".counter--box");
+  if (!box.length) return;
+  if ($(window).scrollTop() > box.offset().top - innerHeight) {
+    $(this).off("scroll counter");
+    $(".counter .heading span").each(function () {
+      const $el = $(this);
+      $({ n: 0 }).animate({ n: $el.data("count") }, {
+        duration: 3000,
+        step: n => $el.text(Math.floor(n)),
+        complete() { $el.text(this.n); }
+      });
+    });
+  }
+});
+
